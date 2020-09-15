@@ -1,2 +1,6 @@
 <!--pages/category/category.wxml-->
 <text>pages/category/category.wxml</text>
+<image src="/assets/home/popular_bg.jpg"></image>
+<image src="/assets/home/popular_bg.jpg"></image>
+<l-nav text="{{text}}" bind:ChildLetMeChange="ChildLetMeChange"></l-nav>
+<button bindtap="lNavtextChange" class="buttonclass">变成李四|张三</button>

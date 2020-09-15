@@ -1,0 +1,3 @@
+<!--components/l-nav/l-nav.wxml-->
+<text>{{text}}</text>
+<button bindtap="fatherChange" class="buttonclass">我是组件的内容</button>

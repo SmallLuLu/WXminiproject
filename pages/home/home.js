@@ -5,14 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userName:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const appinstanc=getApp();
+    console.log(appinstanc)
+    const userName=appinstanc.globalData.name;
+    this.setData({
+      "userName":userName
+    })
   },
 
   /**

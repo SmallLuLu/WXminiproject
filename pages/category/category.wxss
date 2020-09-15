@@ -1,1 +1,4 @@
 /* pages/category/category.wxss */
+.buttonclass{
+  background-color: red;
+}
