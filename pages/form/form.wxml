@@ -1,0 +1,77 @@
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="buttonGetInfo">获取用户信息按钮</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="buttonGetPhone">获取用户手机号</button>
+<button open-type="share" >用户分享</button>
+<view>
+  <checkbox-group bindchange="bindeChange">
+    <label>
+    A <checkbox color="#000000" value="A"></checkbox>
+    </label>
+    <label>
+      B <checkbox value="B"></checkbox>
+    </label>
+    <label>
+      C <checkbox value="C"></checkbox>
+    </label>
+    <label>
+      D <checkbox value="C"></checkbox>
+    </label>
+  </checkbox-group>
+</view>
+<view>form表单</view>
+<view>
+  <form>
+    <view>
+      <view>Checkbox</view>
+      <checkbox-group bindchange="CheckboxChange">
+        <label>选项一<checkbox value="A"></checkbox></label>
+        <label>选项二<checkbox value="B"></checkbox></label>
+      </checkbox-group>
+    </view>
+    <view class="inputView">
+      <view>input</view>
+      <view>
+        <input type="text" placeholder="我自动聚焦" focus="true"/>
+        <input type="text" placeholder="这里input框" />
+        <input type="text" placeholder="这里密码框" password="true" />
+        
+      </view>
+    </view>
+    <view>
+      <view>Radio</view>
+      <radio-group bindchange="RadioChange">
+        <label>选项一<radio value="A"></radio></label>
+        <label>选项二<radio value="B"></radio></label>
+      </radio-group>
+    </view>
+    <view class="section">
+    <view class="section__title">普通选择器</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+    <view class="section__title">多列选择器</view>
+    <picker mode="multiSelector"  range="{{mularray}}" value="{{mulIndex}}" bindchange="bindmulPickerChange" bindcolumnchange="bindcolumnchange">
+      <view>当前选择:{{mularray[0][mulIndex[0]]}}+{{mularray[1][mulIndex[1]]}}+{{mularray[2][mulIndex[2]]}}</view>
+    </picker>
+    <view class="section__title">时间选择器</view>
+    <picker mode="time"  value="{{tiemPicker}}" start="00:00" end="23:59" bindchange="timePickerChange">
+      <view>当前选择:{{tiemPicker}}</view>
+    </picker>
+    <view class="section__title">日期选择器</view>
+    <picker mode="date"  value="{{datePicker}}" start="1900-01-01" end="2020-12-31" bindchange="dataPickerChange">
+      <view>当前选择:{{datePicker}}</view>
+    </picker>
+    <view class="section__title">省市区选择器</view>
+    <picker mode="region"  value="{{regionPicker}}" bindchange="regionPickerChange" custom-item="{{customItem}}">
+      <view>当前选择:{{regionPicker}}</view>
+    </picker>
+  </view>
+  <view>嵌入页面的滚动选择器</view>
+  <picker-view>
+    <picker-view-column>
+      <view></view>
+    </picker-view-column>
+  </picker-view>
+  </form>    
+</view>

@@ -1,7 +1,10 @@
 { 
   "pages":[
+    "pages/form/form",
+    "pages/components/components",
     "pages/home/home",
     "pages/category/category"
+    
   ],
   "window":{
     "navigationBarTitleText": "购物街",
@@ -28,7 +31,13 @@
        "text": "分类",
        "iconPath": "/assets/tabbar/category.png",
        "selectedIconPath": "/assets/tabbar/category_active.png"
-     }
+     },
+     {
+      "pagePath": "pages/components/components",
+      "text": "组件",
+      "iconPath": "/assets/tabbar/category.png",
+      "selectedIconPath": "/assets/tabbar/category_active.png"
+    }
   ]
   },
   "networkTimeout": {

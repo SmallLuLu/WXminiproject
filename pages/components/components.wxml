@@ -1,0 +1,14 @@
+
+<view class="fatherview" hover-class="fatherview-hover">
+  <view class="comview" hover-class="comview-hover" hover-start-time="3000">我是view组件</view>
+</view>
+<progress percent="30" show-info="true" active="true" active-mode="backwards" bindactiveend="progressEnd"></progress>
+<rich-text></rich-text>
+<editor></editor>
+<swiper class="swiperView" indicator-dots="true" indicator-color="rgba(251,25,524,0.5)" indicator-active-color="#ffffff"  autoplay="true">
+  <swiper-item>1</swiper-item>
+  <swiper-item>2</swiper-item>
+  <swiper-item>3</swiper-item>
+</swiper>
+<icon type="success" color="red" size="60"></icon>
+

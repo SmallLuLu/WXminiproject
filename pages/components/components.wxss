@@ -1,0 +1,38 @@
+/* pages/components/components.wxss */
+.comview{
+  background-color: red;
+  height: 400rpx;
+  line-height: 400rpx;
+  width: 400rpx;
+  color: black;
+}
+.comview-hover{
+  background-color: burlywood;
+  color: #ffffff;
+}
+.fatherview{
+  height: 600rpx;
+  width: 600rpx;
+  background: cornflowerblue;
+  text-align: center;
+}
+.fatherview-hover{
+  background-color: cyan;
+}
+.swiperView{
+  background-color: darkcyan;
+}
+.comScrollView{
+  height: 100vh;
+  float: left;
+  width: 30vw;
+}
+.comScrollView:nth-of-type(2){
+  width: 70vw;
+}
+.comScrollView view{
+  width: 100%;
+  height: 600rpx;
+  background-color: red;
+  margin-bottom: 40rpx;
+}

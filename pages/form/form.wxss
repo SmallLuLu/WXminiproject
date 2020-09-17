@@ -1,0 +1,11 @@
+/* pages/form/form.wxss */
+.inputView input{
+  border: 1px solid black;
+  margin-top: 10rpx;
+}
+.section__title{
+  background-color: red;
+}
+.section picker{
+  background: silver;
+}

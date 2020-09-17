@@ -114,5 +114,9 @@ Page({
     this.setData({
       "text":event.detail.text
     })
+  },
+  componentObj(){
+    const a=this.selectComponent("#abc");
+    console.log(a)
   }
 })
